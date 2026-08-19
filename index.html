@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Academic Job Radar — Mohsin Furkh Dar</title>
+<meta name="description" content="Personal job radar: Assistant Professor posts in India and the Gulf, postdocs worldwide in medical imaging AI, with application checklists and document generators.">
+<meta name="robots" content="noindex">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🎯</text></svg>">
+<link rel="stylesheet" href="assets/css/app.css">
+</head>
+<body>
+
+<header class="topbar">
+  <div class="topbar__brand">
+    <span class="topbar__dot"></span>
+    <div>
+      <h1>Academic Job Radar</h1>
+      <p id="brandSub">Assistant Professor · Postdoc · Fellowships</p>
+    </div>
+  </div>
+  <div class="topbar__meta">
+    <span id="dataAge" class="pill pill--muted" title="When the job feed was last refreshed">feed: —</span>
+    <button id="themeBtn" class="btn btn--ghost" title="Toggle light / dark">◐</button>
+  </div>
+</header>
+
+<nav class="tabs" role="tablist">
+  <button class="tab tab--active" data-view="dashboard" role="tab">Dashboard</button>
+  <button class="tab" data-view="feed"      role="tab">Job feed <span id="feedCount" class="tab__badge">0</span></button>
+  <button class="tab" data-view="portals"   role="tab">Search portals</button>
+  <button class="tab" data-view="checklist" role="tab">Checklists</button>
+  <button class="tab" data-view="apply"     role="tab">Apply &amp; write</button>
+  <button class="tab" data-view="tracker"   role="tab">Tracker <span id="trackerCount" class="tab__badge">0</span></button>
+</nav>
+
+<main id="app">
+  <!-- ══════════════════ DASHBOARD ══════════════════ -->
+  <section class="view view--active" id="view-dashboard">
+    <div class="stack" id="dashContent"></div>
+  </section>
+
+  <!-- ══════════════════ FEED ══════════════════ -->
+  <section class="view" id="view-feed">
+    <div class="toolbar">
+      <input type="search" id="feedSearch" class="input input--grow" placeholder="Filter by title, institution, keyword…">
+      <select id="feedTrack" class="input">
+        <option value="">All regions</option>
+        <option value="postdoc">Postdoc — worldwide</option>
+        <option value="world-faculty">Faculty — worldwide</option>
+        <option value="india">India</option>
+        <option value="gulf">Gulf</option>
+      </select>
+      <select id="feedBand" class="input">
+        <option value="">Any match</option>
+        <option value="strong">Strong match only</option>
+        <option value="possible">Possible and above</option>
+      </select>
+      <select id="feedSort" class="input">
+        <option value="score">Sort: best match</option>
+        <option value="posted">Sort: newest</option>
+        <option value="deadline">Sort: closing soonest</option>
+      </select>
+      <label class="check"><input type="checkbox" id="feedSavedOnly"> Saved only</label>
+    </div>
+    <p class="hint" id="feedHint"></p>
+    <div id="feedList" class="stack"></div>
+  </section>
+
+  <!-- ══════════════════ PORTALS ══════════════════ -->
+  <section class="view" id="view-portals">
+    <div class="toolbar">
+      <input type="search" id="portalQuery" class="input input--grow" value="assistant professor computer science" placeholder="Search term to send to each portal">
+      <select id="portalPreset" class="input"></select>
+    </div>
+    <p class="hint">These sites block automated fetching, so the app can't read them for you — but it can open each one with your search already filled in. Click a portal to open it in a new tab.</p>
+    <div id="portalList" class="stack"></div>
+  </section>
+
+  <!-- ══════════════════ CHECKLIST ══════════════════ -->
+  <section class="view" id="view-checklist">
+    <div class="segmented" id="trackPicker"></div>
+    <div id="checklistBody" class="stack"></div>
+  </section>
+
+  <!-- ══════════════════ APPLY ══════════════════ -->
+  <section class="view" id="view-apply">
+    <div class="split">
+      <aside class="split__side">
+        <h2 class="h2">Documents</h2>
+        <div id="genList" class="genlist"></div>
+      </aside>
+      <div class="split__main">
+        <div id="genFields" class="genfields"></div>
+        <div class="genout__bar">
+          <strong id="genTitle">Pick a document</strong>
+          <div class="genout__actions">
+            <button id="copyBtn" class="btn">Copy</button>
+            <button id="downloadBtn" class="btn">Download .txt</button>
+          </div>
+        </div>
+        <textarea id="genOutput" class="genout" spellcheck="false" placeholder="Choose a document on the left. Everything in [SQUARE BRACKETS] is a hole you need to fill in before sending."></textarea>
+        <p class="hint" id="genWarn"></p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════ TRACKER ══════════════════ -->
+  <section class="view" id="view-tracker">
+    <div class="toolbar">
+      <button id="addAppBtn" class="btn btn--primary">+ Add application</button>
+      <span class="spacer"></span>
+      <button id="exportBtn" class="btn btn--ghost">Export backup</button>
+      <label class="btn btn--ghost">Import<input type="file" id="importInput" accept="application/json" hidden></label>
+    </div>
+    <p class="hint">Saved in this browser only — nothing is uploaded anywhere. Export before you switch machines or clear your browser data.</p>
+    <div id="trackerBoard" class="board"></div>
+  </section>
+</main>
+
+<footer class="foot">
+  <span>Built for <strong>Mohsin Furkh Dar</strong> · data refreshed weekly by GitHub Actions</span>
+  <span id="footStats"></span>
+</footer>
+
+<script type="module" src="assets/js/app.js"></script>
+</body>
+</html>

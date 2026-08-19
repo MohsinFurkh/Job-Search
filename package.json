@@ -1,0 +1,15 @@
+{
+  "name": "academic-job-radar",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Personal academic job radar: Assistant Professor posts (India + Gulf) and postdocs worldwide in medical imaging AI, with application checklists and document generators.",
+  "type": "module",
+  "scripts": {
+    "fetch": "node scripts/fetch-jobs.mjs",
+    "fetch:verbose": "node scripts/fetch-jobs.mjs --verbose",
+    "check-portals": "node scripts/check-portals.mjs",
+    "serve": "node scripts/serve.mjs"
+  },
+  "engines": { "node": ">=20" },
+  "license": "MIT"
+}

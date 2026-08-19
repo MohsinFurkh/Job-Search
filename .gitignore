@@ -1,0 +1,41 @@
+# ─────────────────────────────────────────────────────────────
+#  PRIVATE — NEVER COMMIT THESE TO A PUBLIC REPOSITORY
+# ─────────────────────────────────────────────────────────────
+# Your certificates contain date of birth, residence proof,
+# marksheets and identity documents. Publishing them would be
+# an identity-theft risk. Keep this rule.
+Education-Certificates/
+Documents/
+private/
+
+# LaTeX CV sources + build artefacts.
+# If you WANT your CV PDF public (many academics do), delete the
+# line below and run:  git add -f CV_Mohsin/Mohsin_Furkh_Dar_CV.pdf
+CV_Mohsin/
+
+# Your saved applications, if you ever export them into the repo
+data/my-applications.json
+data/tracker-backup*.json
+
+# ── Standard ─────────────────────────────────────────────────
+node_modules/
+.env
+.env.local
+.DS_Store
+Thumbs.db
+*.log
+npm-debug.log*
+.vscode/
+.idea/
+
+# ── Application assets (identity / forgery risk) ─────────────
+# Your scanned signature must never be published — it can be
+# lifted and reused on documents you never signed.
+Signature*.jpg
+Signature*.jpeg
+Signature*.png
+Photograph*.jpeg
+Photograph*.jpg
+Photograph*.png
+*_signature.*
+*_photo.*

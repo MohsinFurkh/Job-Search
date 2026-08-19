@@ -1,0 +1,55 @@
+name: Refresh job feed
+
+# Runs every Monday at 03:00 UTC (08:30 IST) so a fresh feed is
+# waiting when you sit down on Monday morning. You can also trigger
+# it by hand from the Actions tab at any time.
+on:
+  schedule:
+    - cron: "0 3 * * 1"
+  workflow_dispatch:
+  push:
+    paths:
+      - "scripts/**"
+      - "assets/js/profile.js"
+      - ".github/workflows/update-jobs.yml"
+
+permissions:
+  contents: write
+
+concurrency:
+  group: refresh-jobs
+  cancel-in-progress: false
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+
+      - name: Fetch and score listings
+        env:
+          # Optional. Add these under Settings → Secrets and variables →
+          # Actions to switch on India/Gulf coverage via Adzuna.
+          # Without them the step still succeeds, just with fewer sources.
+          ADZUNA_APP_ID: ${{ secrets.ADZUNA_APP_ID }}
+          ADZUNA_APP_KEY: ${{ secrets.ADZUNA_APP_KEY }}
+        run: node scripts/fetch-jobs.mjs --verbose
+
+      - name: Commit the refreshed feed
+        run: |
+          git config user.name  "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          if git diff --quiet -- data/jobs.json; then
+            echo "No change in the feed this week — nothing to commit."
+            exit 0
+          fi
+          COUNT=$(node -e "console.log(JSON.parse(require('fs').readFileSync('data/jobs.json','utf8')).jobs.length)")
+          git add data/jobs.json
+          git commit -m "Refresh job feed: ${COUNT} listings ($(date -u +%Y-%m-%d))"
+          git push
