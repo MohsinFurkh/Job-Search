@@ -105,6 +105,12 @@ export const PORTALS = [
   { id: "manipal-dubai", name: "Manipal Academy, Dubai", group: "gulf", url: "https://www.manipaldubai.com/" },
 
   /* ══════════ POSTDOC — WORLDWIDE BOARDS ══════════ */
+  { id: "miccai", name: "MICCAI job board", group: "postdoc",
+    url: "https://miccai.org/job-board/",
+    note: "Auto-fetched weekly. Your own society's board — small, but almost every post is in your exact field. Check it first." },
+  { id: "miccai-post", name: "MICCAI — create a posting", group: "postdoc",
+    url: "https://miccai.org/job-board/job-posting/",
+    note: "For when you are the one hiring. Worth knowing it exists." },
   { id: "jobrxiv", name: "jobRxiv", group: "postdoc",
     url: "https://jobrxiv.org/?s={q}", note: "Auto-fetched weekly by this app. Browse here for anything the filter missed." },
   { id: "euraxess", name: "EURAXESS — Europe", group: "postdoc",

@@ -29,6 +29,15 @@ export function scoreJob(job) {
     if (bucket !== "negative") matched.push(...hits.slice(0, 4));
   }
 
+  /* A match in the title is much stronger evidence than a match buried
+     in the body, and it also levels the field between sources: boards
+     like jobs.ac.uk publish a one-line summary, so they would otherwise
+     be permanently outscored by sources that dump the full advert into
+     the feed — regardless of how well the post actually fits. */
+  const titleText = (job.title || "").toLowerCase();
+  if (PROFILE.keywords.core.terms.some((t) => titleText.includes(t))) score += 9;
+  if (PROFILE.keywords.role.terms.some((t) => titleText.includes(t))) score += 7;
+
   // Freshness nudge — a listing posted this week beats a month-old one.
   const age = daysOld(job.posted);
   if (age !== null) {

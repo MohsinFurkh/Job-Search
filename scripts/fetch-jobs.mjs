@@ -20,7 +20,9 @@ import { fileURLToPath } from "node:url";
 import { fetchEuraxess } from "./sources/euraxess.mjs";
 import { fetchJobRxiv } from "./sources/jobrxiv.mjs";
 import { fetchAdzuna } from "./sources/adzuna.mjs";
-import { scoreJob, classifyTrack, daysUntil } from "../assets/js/score.js";
+import { fetchMiccai } from "./sources/miccai.mjs";
+import { fetchJobsAcUk } from "./sources/jobsacuk.mjs";
+import { scoreJob, classifyTrack, daysUntil, daysOld } from "../assets/js/score.js";
 
 const ROOT = join(dirname(fileURLToPath(import.meta.url)), "..");
 const OUT = join(ROOT, "data", "jobs.json");
@@ -29,8 +31,19 @@ const VERBOSE = process.argv.includes("--verbose");
 const log = (m) => VERBOSE && console.log(m);
 const say = (m) => console.log(m);
 
-// Anything below this is noise. Raise it if the feed gets too busy.
-const MIN_SCORE = 22;
+/* Anything below this is noise. At 22 the tail filled up with generic
+   EURAXESS postdocs — dentistry, plant genetics, green chemistry —
+   that matched only "postdoc" plus one weak adjacent term. Raise it if
+   the feed gets busy, lower it if a quiet week leaves you short. */
+const MIN_SCORE = 30;
+
+/* Boards rarely delete filled posts, so their archives stretch back
+   years — jobRxiv was serving adverts from 2020. An academic vacancy
+   older than this is almost certainly closed, and a stale listing
+   costs more attention than a missed one. Listings with no date at
+   all are kept, since most of those come from sources that simply do
+   not publish one. */
+const MAX_AGE_DAYS = 90;
 
 async function safely(name, fn) {
   const t0 = Date.now();
@@ -50,6 +63,8 @@ async function main() {
   const collected = (await Promise.all([
     safely("euraxess", () => fetchEuraxess({ pages: 40, log })),
     safely("jobrxiv", () => fetchJobRxiv({ log })),
+    safely("miccai", () => fetchMiccai({ log })),
+    safely("jobs.ac.uk", () => fetchJobsAcUk({ log })),
     safely("adzuna", () => fetchAdzuna({
       appId: process.env.ADZUNA_APP_ID,
       appKey: process.env.ADZUNA_APP_KEY,
@@ -75,7 +90,11 @@ async function main() {
     .filter((j) => j.score >= MIN_SCORE)
     .filter((j) => {
       const left = daysUntil(j.deadline);
-      return left === null || left >= 0;
+      return left === null || left >= 0;          // drop closed vacancies
+    })
+    .filter((j) => {
+      const age = daysOld(j.posted);
+      return age === null || age <= MAX_AGE_DAYS; // drop stale adverts
     })
     .sort((a, b) => b.score - a.score || (b.posted || "").localeCompare(a.posted || ""));
 

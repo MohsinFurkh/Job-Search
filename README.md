@@ -7,8 +7,9 @@ image analysis.
 
 It does four things:
 
-1. **Finds** — a weekly GitHub Action pulls live listings from EURAXESS and
-   jobRxiv, scores each one against your CV, and drops the noise.
+1. **Finds** — a weekly GitHub Action pulls live listings from the MICCAI job
+   board, jobRxiv, EURAXESS and jobs.ac.uk, scores each against your CV, drops
+   the noise, and discards anything older than 90 days.
 2. **Launches** — 69 pre-filled searches across the portals that block
    automated fetching (Naukri, Bayt, GulfTalent, FacultyPlus, university
    career pages, fellowship schemes).
@@ -78,20 +79,17 @@ npm run check-portals
 
 ## Publishing to GitHub Pages
 
+Already published to <https://github.com/MohsinFurkh/Job-Search>. To update:
+
 ```bash
-git init
-git add .
-git commit -m "Academic Job Radar"
-git branch -M main
-git remote add origin https://github.com/mohsinfurkh/academic-job-radar.git
-git push -u origin main
+git add . && git commit -m "your message" && git push
 ```
 
 Then in the repository: **Settings → Pages → Source: Deploy from a branch →
 `main` / `(root)` → Save.**
 
-The site appears at `https://mohsinfurkh.github.io/academic-job-radar/` within
-a minute or two. No build step, no framework, no dependencies.
+The site appears at <https://mohsinfurkh.github.io/Job-Search/> within a
+minute or two. No build step, no framework, no dependencies.
 
 ### Letting the Action commit
 
@@ -113,8 +111,10 @@ listings actually changed, so the commit history stays meaningful.
 
 | Source | Status | Coverage |
 |---|---|---|
-| **jobRxiv** | Working, no key | ~620 listings/run. Biomedical and imaging postdocs worldwide. The best source here. |
-| **EURAXESS** | Working, no key | ~210 listings/run. Europe's official research jobs portal. |
+| **MICCAI job board** | Working, no key | ~20 live posts, but the highest signal here by far — it is the job board of your own society, so nearly every posting is in your exact field. 11 of its 14 kept listings score as strong matches. |
+| **jobRxiv** | Working, no key | ~550/run. Biomedical and imaging postdocs worldwide. |
+| **EURAXESS** | Working, no key | ~190/run. Europe's official research jobs portal. |
+| **jobs.ac.uk** | Working, no key | ~105/run across 7 keyword searches. The main UK academic board — postdocs and lectureships. |
 | **Adzuna** | Optional, needs a free key | India, UAE, UK, Germany, Netherlands. **The only automated India/Gulf coverage.** |
 
 Everything else — Naukri, Bayt, GulfTalent, UGC, university career pages —
@@ -141,16 +141,23 @@ Without them the Adzuna step is skipped and everything else still runs.
 |---|---|
 | Your CV facts, used by scoring *and* every generated letter | `assets/js/profile.js` |
 | Keyword weights — feed too noisy or too quiet | `PROFILE.keywords` in `assets/js/profile.js` |
-| Score cutoff (currently 22) | `MIN_SCORE` in `scripts/fetch-jobs.mjs` |
+| Score cutoff (currently 30) | `MIN_SCORE` in `scripts/fetch-jobs.mjs` |
+| Maximum advert age (currently 90 days) | `MAX_AGE_DAYS` in `scripts/fetch-jobs.mjs` |
 | Portal links and search templates | `assets/js/portals.js` |
 | Checklist items and lead times | `assets/js/checklists.js` |
 | Letter and statement wording | `assets/js/letters.js` |
 
 Scoring is additive and deliberately simple: keyword buckets contribute a
-weight once each, breadth beats repetition, fresh postings get a small nudge,
-and PhD-studentship vocabulary is scored *negatively* so it drops out. Each
+weight once each, breadth beats repetition, a match in the **title** is worth
+more than one buried in the body, fresh postings get a small nudge, and
+PhD-studentship vocabulary is scored *negatively* so it drops out. Each
 listing carries the keywords it matched, so you can always see why it scored
 what it did.
+
+**Staleness.** Job boards rarely delete filled posts, so their archives run
+back years — jobRxiv was serving adverts from 2020. Anything posted more than
+`MAX_AGE_DAYS` ago is dropped outright, because a stale listing costs more
+attention than a missed one. Listings that publish no date at all are kept.
 
 ---
 
@@ -169,7 +176,7 @@ assets/js/
   app.js                      UI
 scripts/
   fetch-jobs.mjs              the weekly job
-  sources/{euraxess,jobrxiv,adzuna}.mjs
+  sources/{miccai,jobrxiv,euraxess,jobsacuk,adzuna}.mjs
   check-portals.mjs           link rot detector
   serve.mjs                   local static server
 data/jobs.json                generated — committed by the Action
