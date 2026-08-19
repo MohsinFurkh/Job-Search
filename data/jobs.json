@@ -1,23 +1,23 @@
 {
-  "generatedAt": "2026-08-19T18:51:45.547Z",
+  "generatedAt": "2026-08-19T19:11:07.956Z",
   "counts": {
-    "total": 154,
-    "raw": 1106,
+    "total": 131,
+    "raw": 876,
     "byTrack": {
-      "world-faculty": 26,
-      "postdoc": 125,
+      "world-faculty": 22,
+      "postdoc": 106,
       "india": 3
     },
     "byBand": {
-      "strong": 38,
-      "possible": 116
+      "strong": 36,
+      "possible": 95
     },
     "bySource": {
       "MICCAI": 14,
       "jobRxiv": 86,
-      "EURAXESS": 24,
       "jobs.ac.uk": 17,
-      "Adzuna": 13
+      "Adzuna": 13,
+      "EURAXESS": 1
     }
   },
   "minScore": 30,
@@ -379,50 +379,6 @@
       "track": "postdoc"
     },
     {
-      "id": "euraxess:460844",
-      "source": "EURAXESS",
-      "title": "Postdoctoral Researcher in 4D X-ray CT Imaging and THM Testing of Porous Materials",
-      "org": "Ghent University",
-      "location": "Number of offers: 1, Belgium, Ghent University, Gent, 9052, Technologiepark 68, B-9052 Gent",
-      "country": "Belgium",
-      "field": "Engineering » Civil engineering",
-      "researcherProfile": "Recognised Researcher (R2)",
-      "description": "Two-year full-time position | Ghent University, Belgium | Shared collaboration with RWTH Aachen University, GermanyGhent University is seeking a highly motivated postdoctoral researcher or research engineer to join a newly funded research infrastructure project focused on the development and...",
-      "posted": "2026-08-18",
-      "deadline": "2026-09-06",
-      "url": "https://euraxess.ec.europa.eu/jobs/460844",
-      "score": 56,
-      "matched": [
-        "ct imaging",
-        "postdoc",
-        "postdoctoral"
-      ],
-      "band": "strong",
-      "track": "postdoc"
-    },
-    {
-      "id": "euraxess:460750",
-      "source": "EURAXESS",
-      "title": "Postdoctoral Researcher in 4D X-ray CT Imaging and THM Testing of Porous Materials",
-      "org": "Ghent University",
-      "location": "Number of offers: 1, Belgium, Ghent University, Ghent, 9000",
-      "country": "Belgium",
-      "field": "Engineering » Civil engineering",
-      "researcherProfile": "Recognised Researcher (R2)",
-      "description": "Ghent University is seeking a highly motivated postdoctoral researcher or research engineer to join a newly funded research infrastructure project focused on the development and scientific use of a miniature thermo hydro-mechanical (THM) triaxial device for in situ 4D X-ray CT imaging of porous...",
-      "posted": "2026-08-17",
-      "deadline": "2026-09-06",
-      "url": "https://euraxess.ec.europa.eu/jobs/460750",
-      "score": 56,
-      "matched": [
-        "ct imaging",
-        "postdoc",
-        "postdoctoral"
-      ],
-      "band": "strong",
-      "track": "postdoc"
-    },
-    {
       "id": "jobrxiv:140392",
       "source": "jobRxiv",
       "title": "Seeking a Postdoctoral Researcher (26-823)",
@@ -573,7 +529,7 @@
       "country": "United Kingdom",
       "field": "Cardiff University Brain Research Imaging Centre (CUBRIC) - School of Psychology",
       "description": "Cardiff University Brain Research Imaging Centre (CUBRIC) - School of Psychology · Salary: £41,064 to £46,049 per annum (Grade 6)",
-      "posted": "2026-08-05",
+      "posted": "2026-08-06",
       "deadline": "",
       "url": "https://www.jobs.ac.uk/job/DSN234/research-associate-microstructural-mri",
       "score": 51,
@@ -859,7 +815,7 @@
       "description": " We Are Hiring: Assistant Professor in Computer Science & Engineering (AI & ML) Are you a passionate academician in Computer Science, Artificial Intelligence, Machine Learning, Data Science, or allied emerging technologies ? Do you want to build a career in a research-driven, innovation-focused university that values teaching excellence, publications, funded projects, and AI-enabled learning ? Brainware University invites applications from highly motivated, research-oriented, and student-centri…",
       "posted": "2026-08-04",
       "deadline": "",
-      "url": "https://www.adzuna.in/land/ad/5827735875?se=PC272f6b8RG2EqRjt9mXMA&utm_medium=api&utm_source=20e94dab&v=A32DF398CE6A95DB5710331E493DCD91E3BB3718",
+      "url": "https://www.adzuna.in/land/ad/5827735875?se=Rmc9hAGc8RGQor-L2zKR7A&utm_medium=api&utm_source=20e94dab&v=A32DF398CE6A95DB5710331E493DCD91E3BB3718",
       "matchedQuery": "assistant professor computer science",
       "score": 45,
       "matched": [
@@ -975,7 +931,7 @@
       "country": "United Kingdom",
       "field": "School of Engineering",
       "description": "School of Engineering · Salary: £33,020",
-      "posted": "2026-08-12",
+      "posted": "2026-08-13",
       "deadline": "",
       "url": "https://www.jobs.ac.uk/job/DSP282/research-assistant-in-medical-image-analysis",
       "score": 44,
@@ -1047,7 +1003,7 @@
       "description": " WE’RE HIRING | ASSISTANT PROFESSORS – PW DIGITAL UNIVERSITY  We are looking for experienced and passionate Assistant Professors to join our academic team for the following programmes:  1. Assistant Professor – BCA & MCA Domain: Computer Applications / Computer Science  2. Assistant Professor – B.Sc. Data Science & B.Sc. Artificial Intelligence Domain: Data Science / Artificial Intelligence / Computer Science  Location: Patiala, Punjab  Work Mode: WFH for initial 1–2 months, followed by relocat…",
       "posted": "2026-08-09",
       "deadline": "",
-      "url": "https://www.adzuna.in/land/ad/5834649854?se=PC272f6b8RG2EqRjt9mXMA&utm_medium=api&utm_source=20e94dab&v=C69404DC2C287A83A472CAFF2C20510D5FABC1C3",
+      "url": "https://www.adzuna.in/land/ad/5834649854?se=Rmc9hAGc8RGQor-L2zKR7A&utm_medium=api&utm_source=20e94dab&v=C69404DC2C287A83A472CAFF2C20510D5FABC1C3",
       "matchedQuery": "assistant professor computer science",
       "score": 43,
       "matched": [
@@ -1060,29 +1016,6 @@
       "track": "india"
     },
     {
-      "id": "euraxess:460567",
-      "source": "EURAXESS",
-      "title": "Postdoctoral researcher (post-doc)",
-      "org": "Adam Mickiewicz University",
-      "location": "Number of offers: 1, Poland, Adam Mickiewicz University, Poznan, 61-614, Wielkopolskie, ul. Uniwersytetu Poznańskiego 2",
-      "country": "Poland",
-      "field": "Computer science » Other Psychological sciences » Other",
-      "researcherProfile": "Recognised Researcher (R2)",
-      "description": "The postdoctoral researcher will work in the NCN SONATA 21 project ‘Personalisation of affective images using generative artificial intelligence’ (UMO-2025/59/D/HS6/03333). The principal responsibilities will include developing and evaluating methods for personalising affective images using...",
-      "posted": "2026-08-16",
-      "deadline": "2026-09-18",
-      "url": "https://euraxess.ec.europa.eu/jobs/460567",
-      "score": 42,
-      "matched": [
-        "artificial intelligence",
-        "postdoc",
-        "post-doc",
-        "postdoctoral"
-      ],
-      "band": "possible",
-      "track": "postdoc"
-    },
-    {
       "id": "jobsacuk:DSP560",
       "source": "jobs.ac.uk",
       "title": "Postdoctoral Research Associate in the Mathematical and Computational Foundations of Artificial Intelligence",
@@ -1091,7 +1024,7 @@
       "country": "United Kingdom",
       "field": "Mathematical Institute Oxford",
       "description": "Mathematical Institute Oxford · Salary: £41,636 to £47,779",
-      "posted": "2026-08-13",
+      "posted": "2026-08-14",
       "deadline": "",
       "url": "https://www.jobs.ac.uk/job/DSP560/postdoctoral-research-associate-in-the-mathematical-and-computational-foundations-of-artificial-intelligence",
       "score": 42,
@@ -1211,7 +1144,7 @@
       "description": "SRM Institute of Science & Technology, Kattankulathur Campus, Chengalpattu Opening in School of Computing under 4 departments Computing Technologies Computational Intelligence Network and Communications Data Science and Business Systems Opening for Assistant Professor Experience - 0 to 18 years can apply Ph.D Specialization in CSE, IT, AI, ICE, Machine learning & Deep learning techniques. UG any degree, PG in M.E or M.Tech related to computer Science background. Note: Ph.D completed or Thesis S…",
       "posted": "2026-05-27",
       "deadline": "",
-      "url": "https://www.adzuna.in/land/ad/5742257783?se=PC272f6b8RG2EqRjt9mXMA&utm_medium=api&utm_source=20e94dab&v=5B2079667667CB7E6004F6E1E1A71D70D49BBB13",
+      "url": "https://www.adzuna.in/land/ad/5742257783?se=Rmc9hAGc8RGQor-L2zKR7A&utm_medium=api&utm_source=20e94dab&v=5B2079667667CB7E6004F6E1E1A71D70D49BBB13",
       "matchedQuery": "assistant professor computer science",
       "score": 42,
       "matched": [
@@ -1393,8 +1326,8 @@
       "field": "Physics Chemistry » Computational chemistry",
       "researcherProfile": "Recognised Researcher (R2)",
       "description": "This project will combine data analysis and method development, integrating statistical inference, machine learning, and population genetics. We will develop advanced computational methods to characterize the functioning of T- and B-cell repertoires. The goal is to build predictive models of immune...",
-      "posted": "2026-08-18",
-      "deadline": "2026-09-07",
+      "posted": "2026-08-19",
+      "deadline": "2026-09-08",
       "url": "https://euraxess.ec.europa.eu/jobs/460821",
       "score": 40,
       "matched": [
@@ -1406,28 +1339,6 @@
       "track": "postdoc"
     },
     {
-      "id": "euraxess:460641",
-      "source": "EURAXESS",
-      "title": "Assistant Professor (Research & Education), Department of Psychology",
-      "org": "Times Higher Education",
-      "location": "Number of offers: 1, United Kingdom, DURHAM UNIVERSITY, Durham, United Kingdom",
-      "country": "United Kingdom",
-      "field": "Psychological sciences",
-      "researcherProfile": "Recognised Researcher (R2) Established Researcher (R3)",
-      "description": "The Department of Psychology at Durham University seeks to appoint a talented individual to the role of Assistant Professor in Psychology. We welcome outstanding candidates from all areas of psychology whose research applies computational approaches, including machine learning and artificial...",
-      "posted": "2026-08-17",
-      "deadline": "2026-08-30",
-      "url": "https://euraxess.ec.europa.eu/jobs/460641",
-      "score": 40,
-      "matched": [
-        "machine learning",
-        "assistant professor",
-        "assistant prof"
-      ],
-      "band": "possible",
-      "track": "world-faculty"
-    },
-    {
       "id": "jobsacuk:DSQ689",
       "source": "jobs.ac.uk",
       "title": "Senior Lecturer in Artificial Intelligence",
@@ -1436,7 +1347,7 @@
       "country": "United Kingdom",
       "field": "Computer Science",
       "description": "Computer Science · Salary: £58,225 to £69,488 per annum",
-      "posted": "2026-08-17",
+      "posted": "2026-08-18",
       "deadline": "",
       "url": "https://www.jobs.ac.uk/job/DSQ689/senior-lecturer-in-artificial-intelligence",
       "score": 40,
@@ -1449,28 +1360,6 @@
       "track": "world-faculty"
     },
     {
-      "id": "euraxess:460430",
-      "source": "EURAXESS",
-      "title": "Postdoctoral Researcher - Probabilistic Deep Learning for Urban Air Quality (AEON-UP)",
-      "org": "Helmholtz Association of German Research Centres",
-      "location": "Number of offers: 1, Germany, Helmholtz-Zentrum Hereon, Geesthacht",
-      "country": "Germany",
-      "field": "All",
-      "researcherProfile": "Recognised Researcher (R2) Established Researcher (R3)",
-      "description": "Work group:Institute of Coastal Environmental ChemistryArea of research:Scientific / postdoctoral postsStarting date:14.08.2026Job description:Postdoctoral Researcher - Probabilistic Deep Learning for Urban Air Quality (AEON-UP) Referenzcode: 1056 Arbeitsort: Geesthacht Bewerbungsfrist: 03.09...",
-      "posted": "2026-08-14",
-      "deadline": "2026-09-09",
-      "url": "https://euraxess.ec.europa.eu/jobs/460430",
-      "score": 40,
-      "matched": [
-        "deep learning",
-        "postdoc",
-        "postdoctoral"
-      ],
-      "band": "possible",
-      "track": "postdoc"
-    },
-    {
       "id": "jobsacuk:DSO564",
       "source": "jobs.ac.uk",
       "title": "Assistant Professor in Fair and Responsible Artificial Intelligence",
@@ -1479,7 +1368,7 @@
       "country": "United Kingdom",
       "field": "Dyson School of Design Engineering",
       "description": "Dyson School of Design Engineering · Salary: £73,194 to £82,954",
-      "posted": "2026-08-12",
+      "posted": "2026-08-13",
       "deadline": "",
       "url": "https://www.jobs.ac.uk/job/DSO564/assistant-professor-in-fair-and-responsible-artificial-intelligence",
       "score": 40,
@@ -1561,6 +1450,28 @@
       "track": "postdoc"
     },
     {
+      "id": "jobsacuk:DSD366",
+      "source": "jobs.ac.uk",
+      "title": "Full/Associate/Assistant Professor in Data Science",
+      "org": "University of Macau",
+      "location": "Macao, United Kingdom",
+      "country": "United Kingdom",
+      "field": "Institute of Artificial Intelligence and Brain Sciences (IAIBS)",
+      "description": "Institute of Artificial Intelligence and Brain Sciences (IAIBS) · Salary: £87,465.51 to £127,834.20 - Please see advert",
+      "posted": "2026-07-03",
+      "deadline": "",
+      "url": "https://www.jobs.ac.uk/job/DSD366/full-associate-assistant-professor-in-data-science",
+      "score": 40,
+      "matched": [
+        "artificial intelligence",
+        "data science",
+        "assistant professor",
+        "assistant prof"
+      ],
+      "band": "possible",
+      "track": "world-faculty"
+    },
+    {
       "id": "jobrxiv:139440",
       "source": "jobRxiv",
       "title": "Data Science & AI Innovation Postdoctoral Fellow d42",
@@ -1582,28 +1493,6 @@
       ],
       "band": "possible",
       "track": "postdoc"
-    },
-    {
-      "id": "jobsacuk:DSD366",
-      "source": "jobs.ac.uk",
-      "title": "Full/Associate/Assistant Professor in Data Science",
-      "org": "University of Macau",
-      "location": "Macao, United Kingdom",
-      "country": "United Kingdom",
-      "field": "Institute of Artificial Intelligence and Brain Sciences (IAIBS)",
-      "description": "Institute of Artificial Intelligence and Brain Sciences (IAIBS) · Salary: £87,465.51 to £127,834.20 - Please see advert",
-      "posted": "2026-07-02",
-      "deadline": "",
-      "url": "https://www.jobs.ac.uk/job/DSD366/full-associate-assistant-professor-in-data-science",
-      "score": 40,
-      "matched": [
-        "artificial intelligence",
-        "data science",
-        "assistant professor",
-        "assistant prof"
-      ],
-      "band": "possible",
-      "track": "world-faculty"
     },
     {
       "id": "jobrxiv:136818",
@@ -1706,7 +1595,7 @@
       "country": "United Kingdom",
       "field": "Department of Computer Science",
       "description": "Department of Computer Science · Salary: £47,389 to £71,566 per annum",
-      "posted": "2026-08-04",
+      "posted": "2026-08-05",
       "deadline": "",
       "url": "https://www.jobs.ac.uk/job/DSM873/lecturer-or-senior-lecturer-in-artificial-intelligence-machine-learning",
       "score": 39,
@@ -1807,48 +1696,6 @@
       ],
       "band": "possible",
       "track": "postdoc"
-    },
-    {
-      "id": "euraxess:460783",
-      "source": "EURAXESS",
-      "title": "Post-Doctoral Fellowship in Analytics and Public Safety",
-      "org": "FAPESP, SAO PAULO RESEARCH FOUNDATION",
-      "location": "Number of offers: 1, Brazil, Escola de Administração de Empresas de São Paulo, Fundação Getulio Vargas (FGV EAESP), São Paulo, São Paulo",
-      "country": "Brazil",
-      "field": "Economics",
-      "researcherProfile": "Established Researcher (R3)",
-      "description": "Activities and context: The fellow will join the FGVanalytics team, a Science Center for Development (SCD) supported by FAPESP and FGV, in cooperation with the São Paulo State Department for Public Security. Activities will include research on data use, Big Data, artificial intelligence and decision...",
-      "posted": "2026-08-18",
-      "deadline": "2026-09-19",
-      "url": "https://euraxess.ec.europa.eu/jobs/460783",
-      "score": 38,
-      "matched": [
-        "artificial intelligence",
-        "post-doc"
-      ],
-      "band": "possible",
-      "track": "postdoc"
-    },
-    {
-      "id": "euraxess:460662",
-      "source": "EURAXESS",
-      "title": "Faculty Positions in Academy of Artificial Intelligence and Advanced Technology (Full Rank)",
-      "org": "Times Higher Education",
-      "location": "Number of offers: 1, China, XIAN JIAOTONG LIVERPOOL UNIVERSITY (XJTLU), Suzhou",
-      "country": "China",
-      "field": "Computer science",
-      "researcherProfile": "Recognised Researcher (R2) Leading Researcher (R4) Established Researcher (R3)",
-      "description": "POSITION OVERVIEW Academy: Academy of Artificial Intelligence and Advanced Technology Position: Faculty [Full Rank] Location: Suzhou Industrial Park & Taicang, Suzhou, China Contract Type: Fixed-term, renewable. 3rd contract is open-ended ABOUT XJTLU In 2006, Xi’an Jiaotong-Liverpool University...",
-      "posted": "2026-08-17",
-      "deadline": "2026-10-16",
-      "url": "https://euraxess.ec.europa.eu/jobs/460662",
-      "score": 38,
-      "matched": [
-        "artificial intelligence",
-        "faculty position"
-      ],
-      "band": "possible",
-      "track": "world-faculty"
     },
     {
       "id": "jobrxiv:141406",
@@ -1960,29 +1807,6 @@
       "matched": [
         "digital pathology",
         "image analysis"
-      ],
-      "band": "possible",
-      "track": "postdoc"
-    },
-    {
-      "id": "euraxess:460826",
-      "source": "EURAXESS",
-      "title": "Postdoctoral Research Fellow (Bioinformatics and AI-Assisted Evidence Synthesis)",
-      "org": "Academic Positions",
-      "location": "Number of offers: 1, Finland, Tampere University, Tampere, 33100, Kalevantie 4",
-      "country": "Finland",
-      "field": "Biological sciences » Biology Biological sciences » Other Computer science » Other Medical sciences » Other",
-      "researcherProfile": "Recognised Researcher (R2)",
-      "description": "Tampere University and Tampere University of Applied Sciences create a unique environment for multidisciplinary, inspirational and high-impact research and education. Our university community has its competitive edges in technology, health and society. <a href=\"http://www.tuni.fi/en\">www.tuni.fi/en</a>. We are looking for a...",
-      "posted": "2026-08-18",
-      "deadline": "2026-09-09",
-      "url": "https://euraxess.ec.europa.eu/jobs/460826",
-      "score": 37,
-      "matched": [
-        "bioinformatics",
-        "postdoc",
-        "postdoctoral",
-        "research fellow"
       ],
       "band": "possible",
       "track": "postdoc"
@@ -2157,7 +1981,7 @@
       "description": "Job Description The Department of Natural Sciences and Environmental health department at Mississippi Valley State University invites applications for a full-time Visiting Assistant Professor position in Artificial Intelligence and Machine Learning with applications in Environmental Health Systems. The successful candidate will teach graduate-level courses in AI and machine learning, with emphasis on environmental data, environmental health, and Environmental Public Health applications and unde…",
       "posted": "2026-07-01",
       "deadline": "",
-      "url": "https://www.adzuna.com/land/ad/5783489213?se=CmMs4v6b8RGQor-L2zKR7A&utm_medium=api&utm_source=20e94dab&v=77BA9E0E77F102DCF18CB419ED07E8A551841577",
+      "url": "https://www.adzuna.com/land/ad/5783489213?se=wDyeiAGc8RGlrvMe-VN8Yg&utm_medium=api&utm_source=20e94dab&v=77BA9E0E77F102DCF18CB419ED07E8A551841577",
       "matchedQuery": "assistant professor artificial intelligence",
       "score": 36,
       "matched": [
@@ -2377,27 +2201,6 @@
       "track": "postdoc"
     },
     {
-      "id": "euraxess:460562",
-      "source": "EURAXESS",
-      "title": "Selection procedure for the recruitment of 1 entry-level PhD Researcher under Decree-Law No. 57/2016 of 29 August, as amended by Law No. 57/2017 of 19 July, for research in the Scientific Area of Comp",
-      "org": "Escola Superior de Saúde do Politécnico do Porto",
-      "location": "Number of offers: 1, Portugal, Escola Superior de Saúde do Instituto Politécnico do Porto, Porto, 4200-072, Porto, Rua Antonio Bernardino de Almeida, 400",
-      "country": "Portugal",
-      "field": "Other",
-      "researcherProfile": "Other Profession",
-      "description": "Selection procedure for the recruitment of 1 entry-level PhD Researcher under Decree-Law No. 57/2016 of 29 August, as amended by Law No. 57/2017 of 19 July, for research in the Scientific Area of Computer Science, sub-areas of Artificial Intelligence, Serious Games and Medical Image Processing, and...",
-      "posted": "2026-08-16",
-      "deadline": "2026-08-30",
-      "url": "https://euraxess.ec.europa.eu/jobs/460562",
-      "score": 35,
-      "matched": [
-        "medical image",
-        "artificial intelligence"
-      ],
-      "band": "possible",
-      "track": "postdoc"
-    },
-    {
       "id": "jobsacuk:DSN539",
       "source": "jobs.ac.uk",
       "title": "Research Associate in Machine Learning for Protein Design",
@@ -2406,7 +2209,7 @@
       "country": "United Kingdom",
       "field": "",
       "description": "Salary: £50,733 to £59,484 per annum",
-      "posted": "2026-08-06",
+      "posted": "2026-08-07",
       "deadline": "",
       "url": "https://www.jobs.ac.uk/job/DSN539/research-associate-in-machine-learning-for-protein-design",
       "score": 35,
@@ -2426,7 +2229,7 @@
       "country": "United Kingdom",
       "field": "Academy of Artificial Intelligence and Advanced Technology",
       "description": "Academy of Artificial Intelligence and Advanced Technology · Salary: Competitive",
-      "posted": "2026-08-05",
+      "posted": "2026-08-06",
       "deadline": "",
       "url": "https://www.jobs.ac.uk/job/DSN035/faculty-position-in-artificial-intelligence-and-advanced-technology-open-rank",
       "score": 35,
@@ -2538,7 +2341,7 @@
       "country": "United Kingdom",
       "field": "",
       "description": "Salary: commensurate with experience",
-      "posted": "2026-07-06",
+      "posted": "2026-07-07",
       "deadline": "",
       "url": "https://www.jobs.ac.uk/job/DSD067/professor-associate-professor-assistant-professor-in-computer-science-and-technology-artificial-intelligence",
       "score": 34,
@@ -2595,6 +2398,48 @@
       "track": "postdoc"
     },
     {
+      "id": "jobsacuk:DSA317",
+      "source": "jobs.ac.uk",
+      "title": "Lecturer / Senior Lecturer in Artificial Intelligence for Academic Experts",
+      "org": "Manchester Metropolitan University",
+      "location": "Manchester, United Kingdom",
+      "country": "United Kingdom",
+      "field": "Computing and Mathematics",
+      "description": "Computing and Mathematics · Salary: For Lecturer in Grade 8 (£41,064 to £51,753) / For Senior Lecturer in Grade 9 (£48,822 to £61,759)",
+      "posted": "2026-06-26",
+      "deadline": "",
+      "url": "https://www.jobs.ac.uk/job/DSA317/lecturer-senior-lecturer-in-artificial-intelligence-for-academic-experts",
+      "score": 34,
+      "matched": [
+        "artificial intelligence",
+        "lecturer",
+        "senior lecturer"
+      ],
+      "band": "possible",
+      "track": "world-faculty"
+    },
+    {
+      "id": "jobsacuk:DSA303",
+      "source": "jobs.ac.uk",
+      "title": "Lecturer / Senior Lecturer in Artificial Intelligence for Industry Experts",
+      "org": "Manchester Metropolitan University",
+      "location": "Manchester, United Kingdom",
+      "country": "United Kingdom",
+      "field": "Computing and Mathematics",
+      "description": "Computing and Mathematics · Salary: For Lecturer in Grade 8 (£41,064 to £51,753) / For Senior Lecturer in Grade 9 (£48,822 to £61,759)",
+      "posted": "2026-06-26",
+      "deadline": "",
+      "url": "https://www.jobs.ac.uk/job/DSA303/lecturer-senior-lecturer-in-artificial-intelligence-for-industry-experts",
+      "score": 34,
+      "matched": [
+        "artificial intelligence",
+        "lecturer",
+        "senior lecturer"
+      ],
+      "band": "possible",
+      "track": "world-faculty"
+    },
+    {
       "id": "jobrxiv:138233",
       "source": "jobRxiv",
       "title": "Postdoctoral Researcher (f_m_x) – AI-based analysis of complex systems",
@@ -2637,48 +2482,6 @@
       ],
       "band": "possible",
       "track": "postdoc"
-    },
-    {
-      "id": "jobsacuk:DSA317",
-      "source": "jobs.ac.uk",
-      "title": "Lecturer / Senior Lecturer in Artificial Intelligence for Academic Experts",
-      "org": "Manchester Metropolitan University",
-      "location": "Manchester, United Kingdom",
-      "country": "United Kingdom",
-      "field": "Computing and Mathematics",
-      "description": "Computing and Mathematics · Salary: For Lecturer in Grade 8 (£41,064 to £51,753) / For Senior Lecturer in Grade 9 (£48,822 to £61,759)",
-      "posted": "2026-06-25",
-      "deadline": "",
-      "url": "https://www.jobs.ac.uk/job/DSA317/lecturer-senior-lecturer-in-artificial-intelligence-for-academic-experts",
-      "score": 34,
-      "matched": [
-        "artificial intelligence",
-        "lecturer",
-        "senior lecturer"
-      ],
-      "band": "possible",
-      "track": "world-faculty"
-    },
-    {
-      "id": "jobsacuk:DSA303",
-      "source": "jobs.ac.uk",
-      "title": "Lecturer / Senior Lecturer in Artificial Intelligence for Industry Experts",
-      "org": "Manchester Metropolitan University",
-      "location": "Manchester, United Kingdom",
-      "country": "United Kingdom",
-      "field": "Computing and Mathematics",
-      "description": "Computing and Mathematics · Salary: For Lecturer in Grade 8 (£41,064 to £51,753) / For Senior Lecturer in Grade 9 (£48,822 to £61,759)",
-      "posted": "2026-06-25",
-      "deadline": "",
-      "url": "https://www.jobs.ac.uk/job/DSA303/lecturer-senior-lecturer-in-artificial-intelligence-for-industry-experts",
-      "score": 34,
-      "matched": [
-        "artificial intelligence",
-        "lecturer",
-        "senior lecturer"
-      ],
-      "band": "possible",
-      "track": "world-faculty"
     },
     {
       "id": "jobrxiv:137626",
@@ -2769,27 +2572,6 @@
       "track": "postdoc"
     },
     {
-      "id": "euraxess:460781",
-      "source": "EURAXESS",
-      "title": "Post-Doctoral Fellowship in Biomedical Engineering / Assistive Technology",
-      "org": "FAPESP, SAO PAULO RESEARCH FOUNDATION",
-      "location": "Number of offers: 1, Brazil, Instituto de Ciência e Tecnologia – UNESP, Câmpus de São José dos Campos, São José dos Campos, São Paulo",
-      "country": "Brazil",
-      "field": "Engineering",
-      "researcherProfile": "Established Researcher (R3)",
-      "description": "Activities and context: Development and validation of personalized assistive technologies for students with disabilities within the scope of CTAIE/UNIFESP. Activities: requirements assessment, 3D scanning, CAD/CAE modeling, additive manufacturing, materials selection, bench testing, and sensor...",
-      "posted": "2026-08-18",
-      "deadline": "2026-09-09",
-      "url": "https://euraxess.ec.europa.eu/jobs/460781",
-      "score": 33,
-      "matched": [
-        "biomedical engineering",
-        "post-doc"
-      ],
-      "band": "possible",
-      "track": "postdoc"
-    },
-    {
       "id": "jobsacuk:DSQ858",
       "source": "jobs.ac.uk",
       "title": "Data analyst (medical imaging and statistics)",
@@ -2798,58 +2580,12 @@
       "country": "United Kingdom",
       "field": "Centre for Clinical Brain Sciences",
       "description": "Centre for Clinical Brain Sciences · Salary: £41,064 to £48,822 Grade UE07",
-      "posted": "2026-08-18",
+      "posted": "2026-08-19",
       "deadline": "",
       "url": "https://www.jobs.ac.uk/job/DSQ858/data-analyst-medical-imaging-and-statistics",
       "score": 33,
       "matched": [
         "medical imaging"
-      ],
-      "band": "possible",
-      "track": "postdoc"
-    },
-    {
-      "id": "euraxess:460638",
-      "source": "EURAXESS",
-      "title": "Research Fellow - The Emergence of Globular Clusters",
-      "org": "Times Higher Education",
-      "location": "Number of offers: 1, United Kingdom, UNIVERSITY OF SURREY, Guildford",
-      "country": "United Kingdom",
-      "field": "Mathematics Physics",
-      "researcherProfile": "Recognised Researcher (R2) First Stage Researcher (R1)",
-      "description": "Applications are invited for a one year Postdoctoral Research Associate to work with Prof. Justin Read in the Astrophysics group within the School of Mathematics and Physics at the University of Surrey. The position is fully funded by the STFC Astronomy Small Award “The Emergence of Globular...",
-      "posted": "2026-08-17",
-      "deadline": "2026-08-30",
-      "url": "https://euraxess.ec.europa.eu/jobs/460638",
-      "score": 33,
-      "matched": [
-        "postdoc",
-        "postdoctoral",
-        "research fellow",
-        "research associate"
-      ],
-      "band": "possible",
-      "track": "postdoc"
-    },
-    {
-      "id": "euraxess:460547",
-      "source": "EURAXESS",
-      "title": "Assistant Professor (postdoc), non-tenure track (all genders welcome)",
-      "org": "Alpen-Adria-Universität Klagenfurt",
-      "location": "Number of offers: 1, Austria, University of Klagenfurt, Klagenfurt am Wörthersee, 9020, Universitaetstr. 65-67",
-      "country": "Austria",
-      "field": "Psychological sciences » Psychology Psychological sciences » Behavioural sciences",
-      "researcherProfile": "Recognised Researcher (R2)",
-      "description": "Work where science meets quality of life: The University of Klagenfurt is a dynamic and internationally oriented university in the heart of the Alps-Adriatic region. With around 1,700 employees and 13,000 students, we combine an excellent research climate, innovative teaching, and an open...",
-      "posted": "2026-08-16",
-      "deadline": "2026-09-01",
-      "url": "https://euraxess.ec.europa.eu/jobs/460547",
-      "score": 33,
-      "matched": [
-        "assistant professor",
-        "postdoc",
-        "tenure track",
-        "assistant prof"
       ],
       "band": "possible",
       "track": "postdoc"
@@ -2933,7 +2669,7 @@
       "country": "United Kingdom",
       "field": "Department of Zoology",
       "description": "Department of Zoology · Salary: £37,694 to £46,049 per annum",
-      "posted": "2026-07-26",
+      "posted": "2026-07-27",
       "deadline": "",
       "url": "https://www.jobs.ac.uk/job/DSK056/research-associate-x-2-in-deep-learning-for-population-genomics-and-biodiversity-forecasting-fixed-term",
       "score": 32,
@@ -3050,84 +2786,17 @@
       "track": "postdoc"
     },
     {
-      "id": "euraxess:460871",
-      "source": "EURAXESS",
-      "title": "Research Assistant Professor / Post-Doc / Leader Team No. 5 - Fiber optic sensors and subsystems",
-      "org": "University of Warsaw",
-      "location": "Number of offers: 1, Poland, Centre of Excellence for Structured Fiber Optics and Applications, Warsaw, 02-093, Pasteura 5",
-      "country": "Poland",
-      "field": "Physics » Optics",
-      "researcherProfile": "Established Researcher (R3)",
-      "description": "The candidate for the position of Research Assistant Professor / Post-Doc / Leader Team No. 5: Fiber optic sensors and subsystems in the MAB FENG project entitled \"Centre of Excellence for Structured Fiber Optics and Applications\" will perform the following tasks: The person employed in this...",
-      "posted": "2026-08-18",
-      "deadline": "2026-09-19",
-      "url": "https://euraxess.ec.europa.eu/jobs/460871",
-      "score": 31,
-      "matched": [
-        "assistant professor",
-        "post-doc",
-        "assistant prof"
-      ],
-      "band": "possible",
-      "track": "postdoc"
-    },
-    {
-      "id": "euraxess:460861",
-      "source": "EURAXESS",
-      "title": "Research Assistant Professor / Post-Doc / Leader Team No. 4 - Mid-IR fiber optics",
-      "org": "University of Warsaw",
-      "location": "Number of offers: 1, Poland, Centre of Excellence for Structured Fiber Optics and Applications, Warsaw, 02-093, Pasteura 5",
-      "country": "Poland",
-      "field": "Physics » Optics",
-      "researcherProfile": "Established Researcher (R3)",
-      "description": "The candidate for the position of Research Assistant Professor / Post-Doc / Leader Team No. 4: Mid-infrared fiber optics in the MAB FENG project entitled \"Centre of Excellence for Structured Fiber Optics and Applications\" will perform the following tasks: The person employed in this position will be...",
-      "posted": "2026-08-18",
-      "deadline": "2026-09-19",
-      "url": "https://euraxess.ec.europa.eu/jobs/460861",
-      "score": 31,
-      "matched": [
-        "assistant professor",
-        "post-doc",
-        "assistant prof"
-      ],
-      "band": "possible",
-      "track": "postdoc"
-    },
-    {
-      "id": "euraxess:460789",
-      "source": "EURAXESS",
-      "title": "Postdoctoral Research Associate in Theoretical Atomic and Molecular Physics",
-      "org": "Times Higher Education",
-      "location": "Number of offers: 1, United Kingdom, DURHAM UNIVERSITY, Durham, United Kingdom",
+      "id": "jobsacuk:DSQ909",
+      "source": "jobs.ac.uk",
+      "title": "AP/ Lecturer in Computer Science",
+      "org": "Maynooth University, National University of Ireland Maynooth",
+      "location": "Maynooth, United Kingdom",
       "country": "United Kingdom",
-      "field": "Chemistry",
-      "researcherProfile": "Recognised Researcher (R2) Established Researcher (R3)",
-      "description": "This post is based in the Durham University Chemistry Department but has close links to researchers in the Physics Department. The Quantum Light and Matter group at Durham includes the research groups of Prof Simon Cornish, Prof Stuart Adams, Prof Ifan Hughes, Prof Matthew Jones, Dr Hannah Williams...",
-      "posted": "2026-08-18",
-      "deadline": "2026-09-30",
-      "url": "https://euraxess.ec.europa.eu/jobs/460789",
-      "score": 31,
-      "matched": [
-        "postdoc",
-        "postdoctoral",
-        "research associate"
-      ],
-      "band": "possible",
-      "track": "postdoc"
-    },
-    {
-      "id": "euraxess:460808",
-      "source": "EURAXESS",
-      "title": "Associate Professor/ Assistant Professor* (Lecturer) roles in Astronautics (Space Engineering)",
-      "org": "Times Higher Education",
-      "location": "Number of offers: 1, United Kingdom, UNIVERSITY OF SOUTHAMPTON, Southampton",
-      "country": "United Kingdom",
-      "field": "Engineering",
-      "researcherProfile": "Recognised Researcher (R2) Leading Researcher (R4) Established Researcher (R3)",
-      "description": "Engineer a new world We are one of the UK’s largest engineering faculties. Join our team, show us how to think even bigger – and we’ll help you explore what you are capable of, and inspire future generations to exceed their potential in our world-renowned university. The Department of Aeronautics...",
-      "posted": "2026-08-18",
-      "deadline": "2026-09-17",
-      "url": "https://euraxess.ec.europa.eu/jobs/460808",
+      "field": "International Engineering College",
+      "description": "International Engineering College · Salary: Assistant Professor / Lecturer (2026) €66,055 – €104,600 p.a. (7 points) Assistant Lecturer (2026) €43,025 – €73,445 p.a. (14 points)",
+      "posted": "2026-08-19",
+      "deadline": "",
+      "url": "https://www.jobs.ac.uk/job/DSQ909/ap-lecturer-in-computer-science",
       "score": 31,
       "matched": [
         "assistant professor",
@@ -3136,6 +2805,27 @@
       ],
       "band": "possible",
       "track": "world-faculty"
+    },
+    {
+      "id": "jobsacuk:DSQ889",
+      "source": "jobs.ac.uk",
+      "title": "Postdoctoral Research Associate in Reliable Neuromorphic, Classical, and Quantum AI",
+      "org": "Northeastern University London",
+      "location": "London, United Kingdom",
+      "country": "United Kingdom",
+      "field": "",
+      "description": "Salary: £42,701 per annum",
+      "posted": "2026-08-19",
+      "deadline": "",
+      "url": "https://www.jobs.ac.uk/job/DSQ889/postdoctoral-research-associate-in-reliable-neuromorphic-classical-and-quantum-ai",
+      "score": 31,
+      "matched": [
+        "postdoc",
+        "postdoctoral",
+        "research associate"
+      ],
+      "band": "possible",
+      "track": "postdoc"
     },
     {
       "id": "jobrxiv:research-fellow-127",
@@ -3160,158 +2850,6 @@
       "track": "postdoc"
     },
     {
-      "id": "jobsacuk:DSQ909",
-      "source": "jobs.ac.uk",
-      "title": "AP/ Lecturer in Computer Science",
-      "org": "Maynooth University, National University of Ireland Maynooth",
-      "location": "Maynooth, United Kingdom",
-      "country": "United Kingdom",
-      "field": "International Engineering College",
-      "description": "International Engineering College · Salary: Assistant Professor / Lecturer (2026) €66,055 – €104,600 p.a. (7 points) Assistant Lecturer (2026) €43,025 – €73,445 p.a. (14 points)",
-      "posted": "2026-08-18",
-      "deadline": "",
-      "url": "https://www.jobs.ac.uk/job/DSQ909/ap-lecturer-in-computer-science",
-      "score": 31,
-      "matched": [
-        "assistant professor",
-        "lecturer",
-        "assistant prof"
-      ],
-      "band": "possible",
-      "track": "world-faculty"
-    },
-    {
-      "id": "jobsacuk:DSQ889",
-      "source": "jobs.ac.uk",
-      "title": "Postdoctoral Research Associate in Reliable Neuromorphic, Classical, and Quantum AI",
-      "org": "Northeastern University London",
-      "location": "London, United Kingdom",
-      "country": "United Kingdom",
-      "field": "",
-      "description": "Salary: £42,701 per annum",
-      "posted": "2026-08-18",
-      "deadline": "",
-      "url": "https://www.jobs.ac.uk/job/DSQ889/postdoctoral-research-associate-in-reliable-neuromorphic-classical-and-quantum-ai",
-      "score": 31,
-      "matched": [
-        "postdoc",
-        "postdoctoral",
-        "research associate"
-      ],
-      "band": "possible",
-      "track": "postdoc"
-    },
-    {
-      "id": "euraxess:460731",
-      "source": "EURAXESS",
-      "title": "Research assistant professor (post-doc)",
-      "org": "Military University of Technology - Wojskowa Akademia Techniczna",
-      "location": "Number of offers: 1, Poland, Military University of Technology, Faculty of Civil Engineering and Geodesy, , Warszawa, 00-908, Kaliskiego 2",
-      "country": "Poland",
-      "field": "Engineering",
-      "researcherProfile": "Other Profession",
-      "description": "as part of the OPUS-24 LAP research project carried out at the Faculty of Civil Engineering and Geodesy of the Military University of Technology, Warsaw, Poland, entitled: “A new approach for inferring spatially continuous multi-technique vertical land motion (VLM) models for coastal areas and sea...",
-      "posted": "2026-08-17",
-      "deadline": "2026-08-29",
-      "url": "https://euraxess.ec.europa.eu/jobs/460731",
-      "score": 31,
-      "matched": [
-        "assistant professor",
-        "post-doc",
-        "assistant prof"
-      ],
-      "band": "possible",
-      "track": "postdoc"
-    },
-    {
-      "id": "euraxess:460717",
-      "source": "EURAXESS",
-      "title": "Postdoctoral Researcher/Research Associate - Building an Irish Healthcare Simulation Network, 1 FTE, School of Medicine, 011940",
-      "org": "University of Galway",
-      "location": "Number of offers: 1, Ireland, University of Galway",
-      "country": "Ireland",
-      "field": "Medical sciences » Medicine",
-      "researcherProfile": "Recognised Researcher (R2)",
-      "description": "Applications are invited from suitably qualified candidates for a full-time, fixed term (17 months) position as a Postdoctoral Researcher/Research Associate with the Irish Centre for Applied Patient Safety and Simulation and the Discipline of General Practice at the University of Galway, Ireland...",
-      "posted": "2026-08-17",
-      "deadline": "2026-09-16",
-      "url": "https://euraxess.ec.europa.eu/jobs/460717",
-      "score": 31,
-      "matched": [
-        "postdoc",
-        "postdoctoral",
-        "research associate"
-      ],
-      "band": "possible",
-      "track": "postdoc"
-    },
-    {
-      "id": "euraxess:460653",
-      "source": "EURAXESS",
-      "title": "Tenure-Track Professor/Associate Professor/Assistant Professor in Finance",
-      "org": "Times Higher Education",
-      "location": "Number of offers: 1, Hong Kong, THE UNIVERSITY OF HONG KONG, Pok Fu Lam, Hong Kong",
-      "country": "Hong Kong",
-      "field": "Economics",
-      "researcherProfile": "Recognised Researcher (R2) Leading Researcher (R4) Established Researcher (R3)",
-      "description": "Ref.: 537060 Work type: Full-time Department: Faculty of Business and Economics (07030) Categories: Professoriate Staff Applications are invited for appointment as Tenure-Track Professor/Associate Professor/Assistant Professor (several posts) in Finance in the Faculty of Business and Economics (Ref...",
-      "posted": "2026-08-17",
-      "deadline": "2026-11-29",
-      "url": "https://euraxess.ec.europa.eu/jobs/460653",
-      "score": 31,
-      "matched": [
-        "assistant professor",
-        "tenure-track",
-        "assistant prof"
-      ],
-      "band": "possible",
-      "track": "world-faculty"
-    },
-    {
-      "id": "euraxess:460660",
-      "source": "EURAXESS",
-      "title": "Postdoctoral Research Associate, Department of Physics",
-      "org": "Times Higher Education",
-      "location": "Number of offers: 1, United Kingdom, DURHAM UNIVERSITY, Durham, United Kingdom",
-      "country": "United Kingdom",
-      "field": "Physics",
-      "researcherProfile": "Recognised Researcher (R2) Established Researcher (R3)",
-      "description": "A Postdoctoral Research Associate position is available to pursue experimental research in the field of quantum technologies within the Durham Quantum Light and Matter group. The position is associated with a project funded by the EPSRC. The post holder will be expected to display the initiative and...",
-      "posted": "2026-08-17",
-      "deadline": "2026-08-24",
-      "url": "https://euraxess.ec.europa.eu/jobs/460660",
-      "score": 31,
-      "matched": [
-        "postdoc",
-        "postdoctoral",
-        "research associate"
-      ],
-      "band": "possible",
-      "track": "postdoc"
-    },
-    {
-      "id": "euraxess:460565",
-      "source": "EURAXESS",
-      "title": "Senior Specialist - Research Engineer/Post-doc in Immunotherapy Research Group",
-      "org": "Łukasiewicz PORT",
-      "location": "Number of offers: 1, Poland, Sieć Badawcza Łukasiewicz - PORT Polski Ośrodek Rozwoju Technologii",
-      "country": "Poland",
-      "field": "Biological sciences » Other",
-      "researcherProfile": "Established Researcher (R3)",
-      "description": "We are seeking a motivated Postdoctoral Researcher to join our team developing an advanced technology platform for cell engineering and cell therapies within the P4Health project. The successful candidate will contribute to the development and implementation of methods for the modification...",
-      "posted": "2026-08-16",
-      "deadline": "2026-08-29",
-      "url": "https://euraxess.ec.europa.eu/jobs/460565",
-      "score": 31,
-      "matched": [
-        "postdoc",
-        "post-doc",
-        "postdoctoral"
-      ],
-      "band": "possible",
-      "track": "postdoc"
-    },
-    {
       "id": "jobsacuk:DSQ119",
       "source": "jobs.ac.uk",
       "title": "Postdoctoral Research Associate (Proteomics and Metabolomics)",
@@ -3320,7 +2858,7 @@
       "country": "United Kingdom",
       "field": "Faculty of Health and Life Sciences - Institute of Life Courses and Medical Sciences - Department of Eye and Vision Sciences",
       "description": "Faculty of Health and Life Sciences - Institute of Life Courses and Medical Sciences - Department of Eye and Vision Sciences · Salary: £39,906 per annum (Grade 7)",
-      "posted": "2026-08-16",
+      "posted": "2026-08-17",
       "deadline": "",
       "url": "https://www.jobs.ac.uk/job/DSQ119/postdoctoral-research-associate-proteomics-and-metabolomics",
       "score": 31,
@@ -3328,50 +2866,6 @@
         "postdoc",
         "postdoctoral",
         "research associate"
-      ],
-      "band": "possible",
-      "track": "postdoc"
-    },
-    {
-      "id": "euraxess:460429",
-      "source": "EURAXESS",
-      "title": "Project Researcher (pre- or post-doctoral level)",
-      "org": "Ita-Suomenyliopisto",
-      "location": "Number of offers: 1, Finland, Itä-Suomen yliopisto, Joensuu",
-      "country": "Finland",
-      "field": "Geography",
-      "researcherProfile": "Recognised Researcher (R2)",
-      "description": "We are inviting applications for a part-time project researcher position (pre- or postdoctoral level) at the Department of Geographical and Historical Studies, located on the Joensuu Campus of the University of Eastern Finland. The position will begin on 1 October 2026, or as agreed. Read more below...",
-      "posted": "2026-08-14",
-      "deadline": "2026-08-29",
-      "url": "https://euraxess.ec.europa.eu/jobs/460429",
-      "score": 31,
-      "matched": [
-        "postdoc",
-        "post-doc",
-        "postdoctoral"
-      ],
-      "band": "possible",
-      "track": "postdoc"
-    },
-    {
-      "id": "euraxess:460442",
-      "source": "EURAXESS",
-      "title": "Template for Postdoctoral ads (scholarship) at Umeå university",
-      "org": "Umeå Stipendier",
-      "location": "Number of offers: 1, Sweden, Umeå universitet stipendiemodul, Umeå",
-      "country": "Sweden",
-      "field": "Medical sciences » Other Medical sciences » Medicine",
-      "researcherProfile": "Recognised Researcher (R2)",
-      "description": "Post doctor (2 years) within xxx “The Department of xxx is offering a postdoctoral scholarship within the project xxx The scholarship is full-time for two years with access xx xx xxxx (date month, year) or by agreement.” Departmental specific information Project description The postdoctoral...",
-      "posted": "2026-08-14",
-      "deadline": "2026-09-05",
-      "url": "https://euraxess.ec.europa.eu/jobs/460442",
-      "score": 31,
-      "matched": [
-        "postdoc",
-        "post doc",
-        "postdoctoral"
       ],
       "band": "possible",
       "track": "postdoc"
