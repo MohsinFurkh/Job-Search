@@ -3,15 +3,16 @@ name: Refresh job feed
 # Runs every Monday at 03:00 UTC (08:30 IST) so a fresh feed is
 # waiting when you sit down on Monday morning. You can also trigger
 # it by hand from the Actions tab at any time.
+#
+# Deliberately no `push:` trigger. It used to run on changes under
+# scripts/, which meant every push produced a bot commit to
+# data/jobs.json and your next push was rejected as non-fast-forward.
+# Use the "Run workflow" button on the Actions tab after changing a
+# source adapter or the scoring keywords — same effect, no churn.
 on:
   schedule:
     - cron: "0 3 * * 1"
   workflow_dispatch:
-  push:
-    paths:
-      - "scripts/**"
-      - "assets/js/profile.js"
-      - ".github/workflows/update-jobs.yml"
 
 permissions:
   contents: write
