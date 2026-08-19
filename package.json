@@ -8,8 +8,11 @@
     "fetch": "node scripts/fetch-jobs.mjs",
     "fetch:verbose": "node scripts/fetch-jobs.mjs --verbose",
     "check-portals": "node scripts/check-portals.mjs",
-    "serve": "node scripts/serve.mjs"
+    "serve": "node scripts/serve.mjs",
+    "test-adzuna": "node scripts/test-adzuna.mjs"
   },
-  "engines": { "node": ">=20" },
+  "engines": {
+    "node": ">=20"
+  },
   "license": "MIT"
 }

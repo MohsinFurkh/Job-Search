@@ -69,6 +69,12 @@ To refresh the job feed on your own machine:
 npm run fetch
 ```
 
+To verify your Adzuna credentials (the key stays in your shell):
+
+```bash
+ADZUNA_APP_ID=your-id ADZUNA_APP_KEY=your-key npm run test-adzuna
+```
+
 To check whether any portal links have rotted:
 
 ```bash
@@ -115,23 +121,44 @@ listings actually changed, so the commit history stays meaningful.
 | **jobRxiv** | Working, no key | ~550/run. Biomedical and imaging postdocs worldwide. |
 | **EURAXESS** | Working, no key | ~190/run. Europe's official research jobs portal. |
 | **jobs.ac.uk** | Working, no key | ~105/run across 7 keyword searches. The main UK academic board — postdocs and lectureships. |
-| **Adzuna** | Optional, needs a free key | India, UAE, UK, Germany, Netherlands. **The only automated India/Gulf coverage.** |
+| **Adzuna** | Optional, needs a free key | India, UK, Germany, Netherlands, US, Canada, Australia, Singapore. **The only automated India coverage.** |
 
 Everything else — Naukri, Bayt, GulfTalent, UGC, university career pages —
 blocks scripted access. Those are handled as one-click launcher links on the
 **Search portals** tab, not scraped. That is a deliberate choice: a launcher
 that always works beats a scraper that silently breaks.
 
-### Switching on India and Gulf coverage (recommended)
+### Switching on India coverage (recommended)
 
-Adzuna gives 5,000 free API calls a month and needs no card.
+Adzuna gives 5,000 free API calls a month and needs no card. A full run uses
+32 calls (8 markets x 4 queries), so a weekly schedule costs about 140/month.
 
 1. Register at <https://developer.adzuna.com/>
-2. Repository **Settings → Secrets and variables → Actions → New repository
-   secret**
-3. Add `ADZUNA_APP_ID` and `ADZUNA_APP_KEY`
+2. Check the credentials work, without putting them in any file:
+
+   ```bash
+   ADZUNA_APP_ID=your-id ADZUNA_APP_KEY=your-key npm run test-adzuna
+   ```
+
+   PowerShell: `$env:ADZUNA_APP_ID="your-id"; $env:ADZUNA_APP_KEY="your-key"; npm run test-adzuna`
+
+3. Repository **Settings -> Secrets and variables -> Actions -> New repository
+   secret** — add `ADZUNA_APP_ID` and `ADZUNA_APP_KEY`
 
 Without them the Adzuna step is skipped and everything else still runs.
+
+**Adzuna does not cover the Gulf.** It runs one site per country and has no
+Middle East presence at all — `adzuna.ae`, `adzuna.sa` and `adzuna.qa` do not
+resolve. This closes the India gap, not the Gulf one.
+
+### The Gulf has no automated source
+
+Nothing in this app fetches Gulf listings, because no Gulf board publishes a
+machine-readable feed and all of them block scripted access. Bayt, GulfTalent,
+NaukriGulf, AcademicGates and the university career pages (KAUST, KFUPM, Qatar
+University, HBKU, Khalifa, UAEU, AUS) are all on the **Search portals** tab as
+one-click pre-filled searches. Gulf hunting is a manual pass — budget ten
+minutes a week for it.
 
 ---
 

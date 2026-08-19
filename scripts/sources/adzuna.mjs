@@ -11,14 +11,26 @@
 
 const UA = "Mozilla/5.0 (compatible; AcademicJobRadar/1.0)";
 
-// Adzuna country codes. gb/de/nl are included because a lot of
-// European university posts are advertised there too.
+/* Adzuna country codes.
+
+   Adzuna runs one site per country and has NO Gulf presence —
+   adzuna.ae, adzuna.sa and adzuna.qa do not resolve. So this source
+   closes the India gap, not the Gulf one. The Gulf still has no
+   machine-readable feed anywhere in this app and stays on the portal
+   launcher (Bayt, GulfTalent, NaukriGulf, AcademicGates and the
+   university career pages).
+
+   India is the reason this source exists; the rest are included
+   because academic posts there are worth seeing anyway. */
 export const MARKETS = [
   { code: "in", label: "India" },
-  { code: "ae", label: "United Arab Emirates" },
   { code: "gb", label: "United Kingdom" },
   { code: "de", label: "Germany" },
   { code: "nl", label: "Netherlands" },
+  { code: "us", label: "United States" },
+  { code: "ca", label: "Canada" },
+  { code: "au", label: "Australia" },
+  { code: "sg", label: "Singapore" },
 ];
 
 export const QUERIES = [
@@ -45,6 +57,20 @@ export async function fetchAdzuna({ appId, appKey, log = () => {} } = {}) {
         const to = setTimeout(() => ac.abort(), 25000);
         const r = await fetch(url, { signal: ac.signal, headers: { "User-Agent": UA } });
         clearTimeout(to);
+
+        /* Distinguish "your key is wrong" from "this one query failed".
+           A bad key fails identically on all 32 calls, so bail out and
+           say so plainly rather than logging the same error 32 times
+           and reporting zero listings as though the source were empty. */
+        if (r.status === 401 || r.status === 403) {
+          log(`  adzuna: HTTP ${r.status} — the API credentials were rejected.`);
+          log(`  adzuna: check ADZUNA_APP_ID and ADZUNA_APP_KEY; no listings fetched.`);
+          return [];
+        }
+        if (r.status === 429) {
+          log(`  adzuna: rate limit reached — stopping with ${out.length} listings so far.`);
+          return out;
+        }
         if (!r.ok) throw new Error(`HTTP ${r.status}`);
 
         const json = await r.json();
